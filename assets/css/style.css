@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'Quicksand';
+    src: url('/assets/fonts/static/Quicksand-Regular.ttf');
+}
+@font-face{
+    font-family: 'Quicksand-Bold';
+    src: url('/assets/fonts/static/Quicksand-Bold.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Quicksand';
+    color: #fff;
+}
+
+.container a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .banner{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/assets/img/Hexagon.svg');
+    padding-top: 30px;
+}
+
+/* grid principal banner */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+}
+
+
+.banner .header{
+    /* border: 1px solid white; */
+    grid-column: 1/-1;
+}
+
+/* nav horizontal */
+.banner .header .nav ul{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+.banner .header .nav ul li{
+    margin-right: 80px;
+    font-weight: bold;
+    
+}
+
+.banner .header .nav ul li a:hover{
+    transition: all 0.3s ease;
+    color: #F38585;
+    cursor: pointer;
+}
+
+/* INICIO donde dice grande SANTIAGO */
+.banner .inicio{
+    /* border: 1px solid white; */
+    grid-column: 1/6;
+    padding: 80px;
+}
+
+.banner .inicio h1{
+    font-family: 'Quicksand-Bold';
+    font-size: 144px;
+    font-weight: bold;
+}
+
+.banner .inicio .red{
+    color: #F38585;
+}
+
+.banner .inicio h2{
+    font-family: 'Quicksand-Bold';
+    font-size: 96px;
+    font-weight: bold;
+}
+
+.banner .boton{
+    margin-top: 32px;
+    border: 1px solid #fff;
+    width: 293px;
+    height: 78px;
+    padding: 10px;
+    font-size: 44px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+.banner .boton:hover{
+    border: 1px solid #F38585;
+    color: #F38585;
+    cursor: pointer;
+}
+
+
+/* tamaño avatar */
+.banner .imagen{
+    /* border: 1px solid white; */
+    padding-right: 190px;
+}
+
+.banner .imagen .avatar{
+    width: 400px;
+}
+
+/* ICONOS DE LINKEDIN Y GIT */
+
+.banner .info{
+    /* border: 1px solid white; */
+    grid-column: 1/-1;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 80px;
+    padding-bottom: 15px;
+}
+
+.banner .info .linkedin-info{
+    width: 42px;
+    height: 42px;
+    margin-right: 15px;
+}
+
+.banner .info .linkedin-info{
+    width: 48px;
+    height: 48px;
+}
+
+/* FIN DE INICIO */
+
+/* COMIENZO DE SOBRE MI */
+.alto{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.container .alto{
+    background-color: #151525;
+}
