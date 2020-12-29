@@ -75,6 +75,7 @@ body{
     /* border: 1px solid white; */
     grid-column: 1/6;
     padding: 80px;
+    padding-right: 0;
 }
 
 .banner .inicio h1{
