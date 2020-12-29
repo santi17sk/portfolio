@@ -15,11 +15,14 @@
 body{
     font-family: 'Quicksand';
     color: #fff;
+    background-color: #151525;
+
 }
 
 .container{
     background-color: #151525;
-
+    max-width: 1903px;
+    margin: 0 auto;
 }
 
 .container a{
@@ -280,4 +283,51 @@ body{
 
 .proyectos .card-proyecto img{
     width: 100%;
+}
+
+/* FIN PROYECTOS */
+
+/* COMIENZO FOOTER */
+/* 4 columnas 
+3 filas*/
+
+.footer{
+    margin-top: 80px;
+    background-color: #30306A;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    grid-template-areas: "numero1 email nada redes"
+                            "numero2 numero2 numero2 numero2"
+                            "copyright copyright copyright copyright";
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.footer .numero-1{
+    grid-area: numero1;
+}
+
+.footer .numero-2{
+    grid-area: numero2;
+}
+
+.footer .email{
+    grid-area: email;
+}
+
+.footer .redes{
+    grid-area: redes;
+    text-align: end;
+}
+
+.footer .copy{
+    grid-area: copyright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 7px;
 }
