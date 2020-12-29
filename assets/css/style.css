@@ -105,9 +105,19 @@ body{
     transition: all 0.5s ease;
 }
 
+.banner .boton a{
+    padding: 10px;
+    transition: all 0.5s ease;
+
+}
+
+.banner .boton a:hover{
+    color: #F38585;
+}
+
+
 .banner .boton:hover{
     border: 1px solid #F38585;
-    color: #F38585;
     cursor: pointer;
 }
 

@@ -5,19 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Tito Santiago</title>
 </head>
 <body>
     <div class="container">
-        <div class="banner">
+        <div class="banner" id="inicio">
             <header class="header">
                 <nav class="nav">
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Sobre mí</a></li>
-                        <li><a href="#">Habilidades</a></li>
-                        <li><a href="#">Proyectos</a></li>
-                        <li><a href="#">Contacto</a></li>
+                    <ul id="ul" >
+                        <li><a href="#inicio" >Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre mí</a></li>
+                        <li><a href="#habilidades">Habilidades</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
@@ -25,21 +26,21 @@
                 <h1><span class="animacion"></span></h1>
                 <div id="cadenas"><h1>Hi! I’m <span class="red">Santiago</span></h1></div>
                 <h2>I’m a web developer</h2>
-                <div class="boton">Sobre mí -></div>
+                <div class="boton"><a href="#sobre-mi">Sobre mí <i class="fas fa-arrow-right"></i></a></div>
             </div>
             <div class="imagen">
                 <img class="avatar" src="/assets/img/avatar2.svg" alt="">
             </div>
             <div class="info">
-                <img class="linkedin-info" src="/assets/img/linkedin-icono-info.svg" alt="">
-                <img class="git-info" src="/assets/img/git.svg" alt="">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img class="linkedin-info" src="/assets/img/linkedin-icono-info.svg" alt=""></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img class="git-info" src="/assets/img/git.svg" alt=""></a>
             </div>
         </div>
 
         <!-- SOBRE MI -->
         <div class="sobre-mi">
-            <div class="title">Sobre mí</div>
-            <div class="body">
+            <div class="title" id="sobre-mi">Sobre mí</div>
+            <div class="body" id="body-sobre-mi">
                 <h3>Hola soy Santiago <br>Emmanuel Tito</h3>
                 <p>
                     Soy de Salta, Argentina. Tengo 20 años de edad, recibido de <br>Técnico Análista de Sistemas.<br>
@@ -49,15 +50,15 @@
             </div>
 
             <div class="imagen">
-                <img class="avatar" src="/assets/img/skills.svg" alt="">
+                <img id="skills" class="avatar" src="/assets/img/skills.svg" alt="">
             </div>
         </div>
 
         <!-- HABILIDADES -->
         <div class="habilidades">
-            <div class="title">Habilidades</div>
+            <div id="habilidades" class="title">Habilidades</div>
             <div class="imagen">
-                <img src="/assets/img/programming.svg" alt="">
+                <img id="programming" src="/assets/img/programming.svg" alt="">
             </div>
             <div class="card">
                 <img src="/assets/img/html.svg" alt="">
@@ -97,36 +98,36 @@
             </div>
         </div>
         <div class="proyectos">
-            <div class="title">Proyectos</div>
-            <div class="card-proyecto">
+            <div id="proyectos" class="title">Proyectos</div>
+            <div class="card-proyecto  animate__animated animate__zoomIn">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
             <div class="card-proyecto">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
             <div class="card-proyecto">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
             <div class="card-proyecto">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
             <div class="card-proyecto">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
             <div class="card-proyecto">
                 <img src="/assets/img/proyectos/carrito.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <div class="ver-sitio"><a href="#">Ver sitio web</a></div>
+                <div class="ver-sitio"><a href="#" target="_blank" rel="noopener noreferrer">Ver sitio web</a></div>
             </div>
         </div>
 
@@ -135,7 +136,7 @@
             <i class="fas fa-chevron-up"></i>
         </div>
 
-        <footer class="footer">
+        <footer class="footer" id="contacto">
             <div class="numero-1"><i class="fab fa-whatsapp"></i> (+54)3875108811</div>
             <div class="numero-2"><i class="fab fa-whatsapp"></i> (+54)387595696</div>
             <div class="email"><i class="fas fa-envelope"></i> santitito14@gmail.com</div>
@@ -144,9 +145,9 @@
                 <p>&copy;2020 - Créditos de la Web</p>
             </div>
             <div class="redes">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-square"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
             </div>
         </footer>
     </div>
