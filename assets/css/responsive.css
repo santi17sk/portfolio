@@ -1,0 +1,609 @@
+@media screen and (max-width: 1880px){
+    .banner .inicio h1 span{
+        font-size: 130px;
+    }
+    .banner .inicio #developer{
+        font-size: 90px;
+    }
+}
+
+
+@media screen and (max-width: 1780px){
+    .banner .inicio h1 span{
+        font-size: 110px;
+    }
+    .banner .inicio #developer{
+        font-size: 80px;
+    }
+}
+
+@media screen and (max-width: 1620px){
+    .banner .inicio h1 span{
+        font-size: 105px;
+    }
+    .banner .inicio #developer{
+        font-size: 70px;
+    }
+
+    .sobre-mi .imagen img{
+        width: 786px;
+
+    }
+
+    .habilidades .imagen img{
+        width: 786px;
+    }
+}
+
+@media screen and (max-width: 1570px){
+    .banner .inicio h1 span{
+        font-size: 90px;
+    }
+    .banner .inicio #developer{
+        font-size: 60px;
+    }
+
+    .sobre-mi .imagen img, .habilidades .imagen img{
+        width: 598px;
+    }
+}
+
+@media screen and (max-width: 1470px){
+    .banner .inicio h1 span{
+        font-size: 85px;
+    }
+    .banner .inicio #developer{
+        font-size: 55px;
+    }
+
+    .sobre-mi .imagen img, .habilidades .imagen img{
+        width: 567px;
+    }
+}
+
+@media screen and (max-width: 1395px){
+
+    .banner .imagen .avatar{
+        width: 364px;
+    }
+
+    .banner .inicio h1 span{
+        font-size: 80px;
+    }
+    .banner .inicio #developer{
+        font-size: 50px;
+    }
+
+    .sobre-mi .imagen img, .habilidades .imagen img{
+        width: 493px;
+    }
+}
+
+
+@media screen and (max-width: 1330px){
+    .banner .imagen .avatar{
+        width: 340px;
+    }
+
+    .banner .inicio h1 span{
+        font-size: 70px;
+    }
+    .banner .inicio #developer{
+        font-size: 50px;
+    }
+
+    .sobre-mi .imagen img, .habilidades .imagen img{
+        width: 493px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    /* BANNER RESPONSIVE */
+    .banner .imagen{
+        grid-column: 1/-1;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .inicio{
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .banner .inicio h1 span{
+        font-size: 73px;
+
+    }
+
+    .banner .inicio #developer{
+        font-size: 50px;
+    }
+
+    .banner .info{
+        grid-column: 1/-1;
+        /* border: 1px solid  #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+    }
+    /* FIN BANNER RESPONSIVE */
+
+    /* SOBRE MI RESPONSIVE */
+
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sobre-mi .title{
+        grid-column: 1/-1;
+        padding: 0;
+    }
+
+    .sobre-mi .body{
+        grid-column: 1/-1;
+        padding-left: 0;
+    }
+    .sobre-mi .imagen{
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .sobre-mi .imagen img{
+        width: 550px;
+    }
+    /* FIN SOBRE MI RESPONSIVE */
+
+    /* HABILIDADES */
+    .habilidades{
+        /* display: grid; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 20px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .habilidades .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades .imagen{
+        grid-column: 1/-1;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades .imagen img{
+        width: 550px;
+    }
+
+    /* FIN HABILIDADES */
+    /* FOOTER */
+    /* 4 filas
+    3 colum */
+
+    .footer{
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "numero1 numero1 numero1 redes"
+                                "numero2 numero2 numero2 numero2"
+                                "email email email email"
+                                "copyright copyright copyright copyright";
+    }
+
+    .footer .email{
+        grid-area: email;
+        font-size: 14px;
+
+    }
+
+    .footer .numero-1, .numero-2{
+        font-size: 14px;
+    }
+
+    .footer .copy{
+        grid-area: copyright;
+        font-size: 15px;
+
+    }
+}
+/* 630 */
+
+
+/* CHICO */
+@media screen and (max-width: 858px){
+    /* NAV RESPONSIVE */
+    .nav{
+        height: 65px;
+    }
+
+    .btn_menu{
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+
+    }
+
+    .banner .header .nav ul {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        list-style: none;
+        z-index: 1;
+    }
+
+    .banner .header .nav ul li{
+        margin-right: 0;
+    }
+
+    .menu_items{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 65px);
+        /* height: 100%; */
+        background: #151525;
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+
+    .menu_items li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+
+    .menu_items li a{
+        font-size: 20px;
+    }
+    /* FIN NAV RESPOSIVE */
+
+    /* BANNER RESPONSIVE */
+    .banner .imagen{
+        grid-column: 1/-1;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner .inicio{
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+
+    .banner .inicio h1 span{
+        font-size: 73px;
+
+    }
+
+    .banner .inicio #developer{
+        font-size: 50px;
+    }
+
+    .banner .info{
+        grid-column: 1/-1;
+        /* border: 1px solid  #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
+    }
+    /* FIN BANNER RESPONSIVE */
+
+    /* SOBRE MI RESPONSIVE */
+
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .sobre-mi .title{
+        grid-column: 1/-1;
+        padding: 0;
+    }
+
+    .sobre-mi .body{
+        grid-column: 1/-1;
+        padding-left: 0;
+    }
+    .sobre-mi .imagen{
+        padding: 0;
+        padding-top: 60px;
+    }
+
+    .sobre-mi .imagen img{
+        width: 550px;
+    }
+    /* FIN SOBRE MI RESPONSIVE */
+
+    /* HABILIDADES */
+    .habilidades{
+        /* display: grid; */
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, auto);
+        gap: 20px;
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+
+    .habilidades .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades .imagen{
+        grid-column: 1/-1;
+        grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .habilidades .imagen img{
+        width: 550px;
+    }
+
+    /* FIN HABILIDADES */
+
+    /* PROYECTOS */
+    /* 7 filas 1 colum */
+    .proyectos{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, auto);
+    }
+    .proyectos .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* FIN PROYECTOS */
+
+    /* FOOTER */
+    /* 4 filas
+    3 colum */
+
+    .footer{
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: "numero1 numero1 numero1 redes"
+                                "numero2 numero2 numero2 numero2"
+                                "email email email email"
+                                "copyright copyright copyright copyright";
+    }
+
+    .footer .email{
+        grid-area: email;
+        font-size: 14px;
+
+    }
+
+    .footer .numero-1, .numero-2{
+        font-size: 14px;
+    }
+
+    .footer .copy{
+        grid-area: copyright;
+        font-size: 15px;
+
+    }
+}
+
+
+@media screen and (max-width: 630px){
+    /* BANNER */
+    .banner .inicio h1 span{
+        font-size: 50px;
+
+    }
+
+    .banner .inicio #developer{
+        font-size: 30px;
+    }
+
+    /* FIN BANNER */
+
+    /* SOBRE MI */
+    .sobre-mi .body h3{
+        font-size: 20px;
+    }
+
+
+    .sobre-mi .imagen img{
+        width: 300px;
+    }
+
+    .sobre-mi .body p{
+        font-size: 12px;
+    }
+
+    /* FIN SOBRE MI */
+
+
+    /* HABILIDADES */
+
+    .habilidades .card img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .habilidades .card p{
+        font-size: 12px;
+    }
+
+    .habilidades .imagen img{
+        width: 300px;
+    }
+
+    /* FIN HABILIDADES */
+
+    /* PROYECTOS */
+
+    .proyectos p{
+        font-size: 12px;
+    }
+
+    .proyectos .card-proyecto .ver-sitio{
+        width: 90px;
+    }
+    
+    .proyectos .card-proyecto .ver-sitio a{
+        font-size: 12px;
+    }
+    /* FIN PROYECTOS */
+
+    /* FOOTER */
+    .footer .email{
+        font-size: 11px;
+
+    }
+    .footer .redes{
+        font-size: 11px;
+    }
+    .footer .numero-1, .numero-2{
+        font-size: 11px;
+    }
+
+    .footer .copy{
+        grid-area: copyright;
+        font-size: 12px;
+
+    }
+    /* FIN FOOTER */
+}
+
+
+@media screen and (max-width: 414px){
+    /* BANNER */
+    .banner .inicio h1 span{
+        font-size: 38px;
+
+    }
+
+    .banner .inicio #developer{
+        font-size: 20px;
+    }
+
+    .banner .boton{
+        border: 1px solid #fff;
+        width: 180px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner .boton a{
+        padding: 13px;
+    }
+
+    .banner .imagen .avatar{
+        width: 235px;
+    }
+    
+
+
+    /* FIN BANNER */
+
+    /* SOBRE MI */
+    .sobre-mi .title{
+        font-size: 17px;
+    }
+    .sobre-mi .body h3{
+        font-size: 15px;
+    }
+
+
+    .sobre-mi .imagen img{
+        width: 280px;
+    }
+
+    .sobre-mi .body p{
+        font-size: 11px;
+    }
+
+    /* FIN SOBRE MI */
+
+
+    /* HABILIDADES */
+    
+    .habilidades .title{
+        font-size: 17px;
+    }
+
+    .habilidades .card img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .habilidades .card p{
+        font-size: 11px;
+    }
+
+    .habilidades .imagen img{
+        width: 280px;
+    }
+
+    /* FIN HABILIDADES */
+
+    /* PROYECTOS */
+    .proyectos .title{
+        font-size: 17px;
+    }
+    .proyectos p{
+        font-size: 11px;
+    }
+
+    .proyectos .card-proyecto .ver-sitio{
+        width: 90px;
+    }
+    
+    .proyectos .card-proyecto .ver-sitio a{
+        font-size: 12px;
+    }
+    /* FIN PROYECTOS */
+
+    /* FOOTER */
+    .footer .email{
+        font-size: 10px;
+
+    }
+    .footer .redes{
+        font-size: 10px;
+    }
+    .footer .numero-1, .numero-2{
+        font-size: 10px;
+    }
+
+    .footer .copy{
+        grid-area: copyright;
+        font-size: 11px;
+
+    }
+    /* FIN FOOTER */
+}
