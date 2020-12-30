@@ -2,6 +2,9 @@
     document.addEventListener('DOMContentLoaded', () => {
         animacionPalabra();
         const btn_menu = document.querySelector('.btn_menu');
+        const nav = document.querySelector('.nav');
+        nav.addEventListener('click', enlaceClick);
+
         if(btn_menu){
             btn_menu.addEventListener('click', () => {
                 const menu_items = document.querySelector('.menu_items');
@@ -100,4 +103,22 @@
 
         }
     })
+
+    // quita el menu cuando hacemos click en un enlace, en el responsivo
+    function enlaceClick(e){
+        const tamanoVentana = window.outerWidth;
+        if(tamanoVentana < 856){
+            if(e.target.classList.contains('enlace')){
+                document.body.style.overflowY = '';
+                document.body.style.overflowX = '';
+                document.querySelector('.banner').style.background= '';
+                const menu_items = document.querySelector('.show');
+                if(menu_items){
+                    menu_items.classList.remove('show');
+                }
+                
+            }
+            
+        }
+    }
 })()
