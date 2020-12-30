@@ -1,6 +1,24 @@
 (function(){
     document.addEventListener('DOMContentLoaded', () => {
         animacionPalabra();
+        const btn_menu = document.querySelector('.btn_menu');
+        if(btn_menu){
+            btn_menu.addEventListener('click', () => {
+                const menu_items = document.querySelector('.menu_items');
+                
+                const siTrue = menu_items.classList.toggle('show');
+                if(siTrue){
+                    document.body.style.overflowY = 'hidden';
+                    document.body.style.overflowX = 'scroll';
+                    document.querySelector('.banner').style.background= '#151525';
+                }else{
+                    document.body.style.overflowY = '';
+                    document.body.style.overflowX = '';
+                    document.querySelector('.banner').style.background= '';
+
+                }
+            })
+        }
     });
 
     window.addEventListener('scroll', ()=> {
@@ -67,4 +85,19 @@
             elemento.classList.add(clase1, clase2);
         }
     }
+    // con todo esto eliminamos las clases del nav cuando esta activo y de repente hacemos grande la ventana
+    // pantalla 1920 x 1080
+    window.addEventListener('resize', () => {
+        const tamanoVentana = window.outerWidth;
+        if(tamanoVentana > 856){
+            document.body.style.overflowY = '';
+            document.body.style.overflowX = '';
+            document.querySelector('.banner').style.background= '';
+            const menu_items = document.querySelector('.show');
+            if(menu_items){
+                menu_items.classList.remove('show');
+            }
+
+        }
+    })
 })()
