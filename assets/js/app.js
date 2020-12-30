@@ -107,7 +107,7 @@
     // quita el menu cuando hacemos click en un enlace, en el responsivo
     function enlaceClick(e){
         const tamanoVentana = window.outerWidth;
-        if(tamanoVentana < 856){
+        if(tamanoVentana <= 880){
             if(e.target.classList.contains('enlace')){
                 document.body.style.overflowY = '';
                 document.body.style.overflowX = '';

@@ -413,6 +413,10 @@ ul.show{
         z-index: 1;
     }
 
+    .banner .header .nav ul li{
+        margin-right: 0;
+    }
+
     .menu_items{
         position: fixed;
         width: 100vw;
@@ -438,10 +442,22 @@ ul.show{
     /* BANNER RESPONSIVE */
     .banner .imagen{
         grid-column: 1/-1;
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
     }
     .banner .inicio{
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
         grid-column: 1/-1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
+
 
     .banner .inicio h1 span{
         font-size: 73px;
@@ -454,16 +470,35 @@ ul.show{
 
     .banner .info{
         grid-column: 1/-1;
+        /* border: 1px solid  #fff; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 80px;
     }
     /* FIN BANNER RESPONSIVE */
 
     /* SOBRE MI RESPONSIVE */
+
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
     .sobre-mi .title{
         grid-column: 1/-1;
+        padding: 0;
     }
 
     .sobre-mi .body{
         grid-column: 1/-1;
+        padding-left: 0;
+    }
+    .sobre-mi .imagen{
+        padding: 0;
+        padding-top: 60px;
     }
 
     .sobre-mi .imagen img{
@@ -481,9 +516,18 @@ ul.show{
         padding-left: 80px;
     }
 
+    .habilidades .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .habilidades .imagen{
         grid-column: 1/-1;
         grid-row: 5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .habilidades .imagen img{
@@ -497,6 +541,11 @@ ul.show{
     .proyectos{
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(7, auto);
+    }
+    .proyectos .title{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     /* FIN PROYECTOS */
