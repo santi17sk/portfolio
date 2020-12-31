@@ -1,10 +1,10 @@
 @font-face{
     font-family: 'Quicksand';
-    src: url('/assets/fonts/static/Quicksand-Regular.ttf');
+    src: url('../../assets/fonts/static/Quicksand-Regular.ttf');
 }
 @font-face{
     font-family: 'Quicksand-Bold';
-    src: url('/assets/fonts/static/Quicksand-Bold.ttf');
+    src: url('../../assets/fonts/static/Quicksand-Bold.ttf');
 }
 *{
     margin: 0;
@@ -33,7 +33,7 @@ body{
 .container .banner{
     width: 100%;
     min-height: 100vh;
-    background-image: url('/assets/img/Hexagon.svg');
+    background-image: url('../../assets/img/Hexagon.svg');
     /* background-repeat: no-repeat; */
     padding-top: 30px;
 }
@@ -288,6 +288,9 @@ ul.show{
 .proyectos .card-proyecto{
     border: 1px solid #fff;
     border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .proyectos p{

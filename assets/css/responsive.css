@@ -274,12 +274,19 @@
     /* FIN NAV RESPOSIVE */
 
     /* BANNER RESPONSIVE */
+    .banner{
+        grid-template-rows: repeat(4, auto);
+    }
+    .banner .inicio h1{
+        display: flex;
+    }
     .banner .imagen{
         grid-column: 1/-1;
         display: flex;
         padding: 0;
         justify-content: center;
         align-items: center;
+        grid-row: 2;
     }
     .banner .inicio{
         padding-top: 0;
@@ -498,6 +505,14 @@
 
 
 @media screen and (max-width: 414px){
+    .btn_menu{
+        font-size: 20px;
+    }
+    #button-up{
+        width: 40px;
+        height: 40px;
+        right: 18px;
+    }
     /* BANNER */
     .banner .inicio h1 span{
         font-size: 38px;
@@ -526,6 +541,14 @@
         width: 235px;
     }
     
+/*     .banner .info .linkedin-info {
+        width: 35px;
+        height: 35px;
+    }
+    .banner .info .git-info {
+        width: 35px;
+        height: 35px;
+    } */
 
 
     /* FIN BANNER */
@@ -554,6 +577,8 @@
     
     .habilidades .title{
         font-size: 17px;
+        margin-top: 150px;
+
     }
 
     .habilidades .card img{
@@ -574,6 +599,8 @@
     /* PROYECTOS */
     .proyectos .title{
         font-size: 17px;
+        margin-top: 150px;
+
     }
     .proyectos p{
         font-size: 11px;
@@ -589,6 +616,10 @@
     /* FIN PROYECTOS */
 
     /* FOOTER */
+    .footer{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     .footer .email{
         font-size: 10px;
 
@@ -603,6 +634,96 @@
     .footer .copy{
         grid-area: copyright;
         font-size: 11px;
+
+    }
+    /* FIN FOOTER */
+}
+
+@media screen and (max-width: 375px){
+
+    .btn_menu{
+        font-size: 20px;
+    }
+    #button-up{
+        width: 40px;
+        height: 40px;
+        right: 18px;
+    }
+    /* SOBRE MI */
+    .sobre-mi .title{
+        font-size: 16px;
+    }
+    .sobre-mi .body h3{
+        font-size: 14px;
+    }
+
+
+    .sobre-mi .imagen img{
+        width: 270px;
+    }
+
+    .sobre-mi .body p{
+        font-size: 10px;
+    }
+
+    /* FIN SOBRE MI */
+
+     /* HABILIDADES */
+    
+    .habilidades .title{
+        font-size: 16px;
+        margin-top: 150px;
+
+    }
+
+    .habilidades .card p{
+        font-size: 8px;
+    }
+
+    .habilidades .imagen img{
+        width: 216px;
+    }
+
+    /* FIN HABILIDADES */
+
+    /* PROYECTOS */
+    .proyectos .title{
+        font-size: 16px;
+        margin-top: 150px;
+
+    }
+    .proyectos p{
+        font-size: 10px;
+    }
+
+    .proyectos .card-proyecto .ver-sitio{
+        width: 90px;
+    }
+    
+    .proyectos .card-proyecto .ver-sitio a{
+        font-size: 11px;
+    }
+    /* FIN PROYECTOS */
+
+    /* FOOTER */
+    .footer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .footer .email{
+        font-size: 9px;
+
+    }
+    .footer .redes{
+        font-size: 9px;
+    }
+    .footer .numero-1, .numero-2{
+        font-size: 9px;
+    }
+
+    .footer .copy{
+        grid-area: copyright;
+        font-size: 10px;
 
     }
     /* FIN FOOTER */
